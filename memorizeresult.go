@@ -1,4 +1,4 @@
-package memorizeresult
+package main
 
 type Memorized func(int) int
 

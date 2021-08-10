@@ -1,7 +1,6 @@
 package main
 
 import (
-	mem "memorizeresult"
 	"testing"
 )
 
@@ -26,8 +25,8 @@ func TestCachemem(t *testing.T) {
 		{50, 12586269025},
 		{55, 139583862445},
 	}
-	var fibMem mem.Memorized
-	fibMem = mem.Cachemem(func(in int) int {
+	var fibMem Memorized
+	fibMem = Cachemem(func(in int) int {
 		switch in {
 		case 0:
 			return 0
